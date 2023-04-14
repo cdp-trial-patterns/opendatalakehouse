@@ -5,7 +5,7 @@ In this lab, we will build an end\-to\-end machine learning project using Cloude
 ## Lab 1
 
 Note the environment name as it will be used as one of the inputs while we create our Machine Learning model.
-![Screen_Shot_2022-09-01_at_4-05-17_PM.png](image/Screen_Shot_2023_04_13_at_9_16_46_PM.png)
+![Screen_Shot_2022-09-01_at_4-05-17_PM.png](images/Screen_Shot_2023_04_13_at_9_16_46_PM.png)
 
 1. Click on the workspace available in your Machine Learning Page
 2. Once inside your workspace, Click AMPs in the left menu
