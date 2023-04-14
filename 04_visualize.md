@@ -10,7 +10,7 @@
 
 It will take a few minutes for the data application to launch.
 
-![Screen_Shot_2022-09-01_at_1-11-48_PM.png](image/Screen_Shot_2022-09-01_at_1-11-48_PM.png)
+![Screen_Shot_2022-09-01_at_1-11-48_PM.png](images/Screen_Shot_2022-09-01_at_1-11-48_PM.png)
 
 ---
 
@@ -42,7 +42,7 @@ In this lab, we will create a sample dashboard to visualize the reports for a bu
 
 1. Click on the `dataset` we created in Lab 3 and then click `New Dashboard` icon.
 
-![Screen_Shot_2022-09-01_at_1-28-26_PM.png](image/Screen_Shot_2022-09-01_at_1-28-26_PM.png)
+![Screen_Shot_2022-09-01_at_1-28-26_PM.png](images/Screen_Shot_2022-09-01_at_1-28-26_PM.png)
 
 2. We will now create 3 reports & charts in this dashboard
     1. Total arrival delays by Carrier
@@ -54,14 +54,14 @@ In this lab, we will create a sample dashboard to visualize the reports for a bu
 1. Enter a the tile for the dashboard as `Airlines dashboard`
 2. Click `Visuals`, then `New Visual`
 
-![Screen_Shot_2022-09-01_at_1-38-23_PM.png](image/Screen_Shot_2022-09-01_at_1-38-23_PM.png)
+![Screen_Shot_2022-09-01_at_1-38-23_PM.png](images/Screen_Shot_2022-09-01_at_1-38-23_PM.png)
 
 1. Click `Grouped Bars` as the chart type
 2. From the `Dimensions` shelf, drag the `carrier` field into the `X Axis` field
 3. From the `Measures` shelf, drag the `arrdelay` field into the `Y Axis` field
 4. Enter the title for this chart as `Total arrival delays by Carrier`
 
-![Screen_Shot_2022-09-01_at_1-40-16_PM.png](image/Screen_Shot_2022-09-01_at_1-40-16_PM.png)
+![Screen_Shot_2022-09-01_at_1-40-16_PM.png](images/Screen_Shot_2022-09-01_at_1-40-16_PM.png)
 
 ### Cities with the most number of delayed flights \(Top 10\)
 
@@ -76,7 +76,7 @@ We will create a scatter chart to identify the cities that have the most number 
     1. Under `Field Properties` , go to `Order` and `Top K` field, then to Top K
     2. Enter `10` as the value and click `Refresh Visual`
 
-![Screen_Shot_2022-09-01_at_1-48-28_PM.png](image/Screen_Shot_2022-09-01_at_1-48-28_PM.png)
+![Screen_Shot_2022-09-01_at_1-48-28_PM.png](images/Screen_Shot_2022-09-01_at_1-48-28_PM.png)
 
 ### Correlate delays with origin & destination city pairs
 
@@ -85,18 +85,18 @@ For this use\-case, we will let Cloudera Data Visualization recommend a chart ty
 1. Click `Visuals`, then `New Visual`
 2. Now click on `Explore Visuals`
 
-![Screen_Shot_2022-09-01_at_1-51-18_PM.png](image/Screen_Shot_2022-09-01_at_1-51-18_PM.png)
+![Screen_Shot_2022-09-01_at_1-51-18_PM.png](images/Screen_Shot_2022-09-01_at_1-51-18_PM.png)
 
 1. In the pop-up window, choose `origincity` and `destinationcity` on the `Dimensions` shelf. `Record Count` on the `Measures` shelf
 2. The `Possible Visuals` pane will show you a list of recommended visuals.
 3. You can explore the various charts and then choose `Correlation Heatmap`
 4. Name your chart as `Correlate delays with origin & destination city pairs`
 
-![Screen_Shot_2022-09-01_at_1-56-01_PM.png](image/Screen_Shot_2022-09-01_at_1-56-01_PM.png)
+![Screen_Shot_2022-09-01_at_1-56-01_PM.png](images/Screen_Shot_2022-09-01_at_1-56-01_PM.png)
 
 7. You can change the color of correlation map by clicking on the `Explore Options` icon on top of the chart and then `Colors`, then choose a format you prefer
 
-![Screen_Shot_2022-09-01_at_2-14-09_PM.png](image/Screen_Shot_2022-09-01_at_2-14-09_PM.png)
+![Screen_Shot_2022-09-01_at_2-14-09_PM.png](images/Screen_Shot_2022-09-01_at_2-14-09_PM.png)
 
 Click `Save` to save the dashboard.
 
