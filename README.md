@@ -8,10 +8,10 @@ For the use-case today, we will use the airlines dataset.
 
 ### Use\-case reference architecture:
 
-![CDP_One-Self_service_trial-use-case_development.png](image/CDP_One-Self_service_trial-use-case_development.png)
+![CDP_One-Self_service_trial-use-case_development.png](images/CDP_One-Self_service_trial-use-case_development.png)
 
 **Data Model:**
-![sRDseVc087jXJZoaZqGhauBsX6cuUWueG8zitK8yDo-i0-ycdiR23d7ErVhPz75GqeJY6BEU_k6o59pVq8YGSB-8chMrjHKnsF2HXoU7RIHlcMqcQKvX-yKOkAJqeNVt7_OwKTSNtllAIDeIid5z4m4T8WEM3bDGmRDazGpzq_E4QL1HsxVTvEqhA.png](image/sRDseVc087jXJZoaZqGhauBsX6cuUWueG8zitK8yDo-i0-ycdiR23d7ErVhPz75GqeJY6BEU_k6o59pVq8YGSB-8chMrjHKnsF2HXoU7RIHlcMqcQKvX-yKOkAJqeNVt7_OwKTSNtllAIDeIid5z4m4T8WEM3bDGmRDazGpzq_E4QL1HsxVTvEqhA.png)
+![sRDseVc087jXJZoaZqGhauBsX6cuUWueG8zitK8yDo-i0-ycdiR23d7ErVhPz75GqeJY6BEU_k6o59pVq8YGSB-8chMrjHKnsF2HXoU7RIHlcMqcQKvX-yKOkAJqeNVt7_OwKTSNtllAIDeIid5z4m4T8WEM3bDGmRDazGpzq_E4QL1HsxVTvEqhA.png](images/sRDseVc087jXJZoaZqGhauBsX6cuUWueG8zitK8yDo-i0-ycdiR23d7ErVhPz75GqeJY6BEU_k6o59pVq8YGSB-8chMrjHKnsF2HXoU7RIHlcMqcQKvX-yKOkAJqeNVt7_OwKTSNtllAIDeIid5z4m4T8WEM3bDGmRDazGpzq_E4QL1HsxVTvEqhA.png)
 
 With the above use\-case, we will go through each phase of building a data lakehouse which includes the below:
 
