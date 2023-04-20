@@ -16,7 +16,6 @@ For the use-case today, we will use the airlines dataset.
 With the above use\-case, we will go through each phase of building a data lakehouse which includes the below:
 
 - Ingest
-- Prepare
 - Analyze
 - Visualize
 - Predict
