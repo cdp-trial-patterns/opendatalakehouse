@@ -10,4 +10,4 @@ The primary goal of this is to build an ingestion data pipeline.
     - Planes data
     - Airlines data
     - Passenger data
-- We connect to the source bucket and pull all 5 datasets and ingest into the CDP Data warehouse (Hive in this case) for further analysis in ![02_analyze](02_analyze.md)
+- We connect to the source bucket and pull all 5 datasets and ingest into the CDP Data warehouse (Hive in this case) for further analysis in [02_analyze](02_analyze.md)
