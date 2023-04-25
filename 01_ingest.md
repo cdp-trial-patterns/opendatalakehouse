@@ -48,8 +48,28 @@ Source files have been pre-loaded to the S3 folder, _data_
 ![Screen_Shot_2023_04_23_at_2_36_50_PM.png](images/Screen_Shot_2023_04_23_at_2_36_50_PM.png)
 
 8. Select **flights.csv**. The file will be parsed and the appropriate columns will be identified. 
-9. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected.
+9. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected. Click Next.
 
 ![Screen_Shot_2023_04_23_at_2_52_46_PM.png](images/Screen_Shot_2023_04_23_at_2_52_46_PM.png)
+
+10. In the Next Screen, verify that the Destination Name is **airlines.flights**. 
+
+Also, ensure that **month** is of Type **bigint** (At times, it is identified as boolean). 
+
+![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
+
+11. Click Submit. This is a file with 462 Million records, it will take a 3 - 4 minutes to import into the table. 
+
+![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
+
+12. Query the newly loaded table, execute the below query - 
+
+```
+select count(*) from airlines.flights;
+```
+
+![Screen_Shot_2023_04_23_at_3_00_32_PM.png](images/Screen_Shot_2023_04_23_at_3_00_32_PM.png)
+
+13. From here, you can go to Lab 2 to ingest the remaining files or you can head to [lab around Predict](04_predict.md) to build an end-to-end machine learning project using Cloudera Machine Learning
 
 
