@@ -2,6 +2,10 @@
 
 In this lab, we will build an end\-to\-end machine learning project using Cloudera Machine Learning. The primary goal of this project is to build a gradient boosted \(XGBoost\) classification model to predict the likelihood of a flight being canceled based on years of historical records. To achieve that goal, this project demonstrates the end\-to\-end Machine Learning journey for model training and inference using Spark on CML. Additionally, this project deploys a hosted model and front\-end application to allow users to interact with the trained model.
 
+## Pre-requisite
+
+1. Please ensure that you have completed the [lab](01_ingest.md#lab-1-ingest-flights-data-needed-for-prediction) to ingest data needed for Prediction.
+
 ## Lab 1
 
 Note the environment name as it will be used as one of the inputs while we create our Machine Learning model.
