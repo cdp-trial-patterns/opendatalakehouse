@@ -36,5 +36,6 @@ The primary goal of this is to build an ingestion data pipeline.
 ```
 create database airlines;
 ```
+5. Go inside the airlines database and click **+** to create a table from a CSV file
 
-
+![Screen_Shot_2023_04_23_at_2_35_16_PM.png](images/Screen_Shot_2023_04_23_at_2_35_16_PM.png)
