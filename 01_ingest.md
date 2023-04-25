@@ -36,6 +36,20 @@ The primary goal of this is to build an ingestion data pipeline.
 ```
 create database airlines;
 ```
-5. Go inside the airlines database and click **+** to create a table from a CSV file
+5. Go inside the airlines database and click **+** to create a table by importing from a CSV file
 
 ![Screen_Shot_2023_04_23_at_2_35_16_PM.png](images/Screen_Shot_2023_04_23_at_2_35_16_PM.png)
+
+6. You will be taken to **Import to table** screen. Keeping _Remote File_ as Type, click **..** in the Path. 
+7. Select S3 and you will see file path as s3a://<environment_name>/user/<user_name>. **Change path to s3a://<environment_name>/data**.
+
+Source files have been pre-loaded to the S3 folder, _data_
+
+![Screen_Shot_2023_04_23_at_2_36_50_PM.png](images/Screen_Shot_2023_04_23_at_2_36_50_PM.png)
+
+8. Select **flights.csv**. The file will be parsed and the appropriate columns will be identified. 
+9. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected.
+
+![Screen_Shot_2023_04_23_at_2_52_46_PM.png](images/Screen_Shot_2023_04_23_at_2_52_46_PM.png)
+
+
