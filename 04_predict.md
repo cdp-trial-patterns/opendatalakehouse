@@ -78,7 +78,7 @@ Exploring the deployed model
 5. The `Test Model` section contains sample input populated automatically. You can also pass your own sample Inputs in the format given. Then click Test
 6. The model gets called with the feature we just sent through and a prediction result is given back. Value of  1 predicts that the flight will be delayed, 0 means the flight will not be delayed
 
-![Screen_Shot_2022-09-01_at_5-17-16_PM.png](image/Screen_Shot_2022-09-01_at_5-17-16_PM.png)
+![Screen_Shot_2023_04_25_at_12_03_54_AM.png](images/Screen_Shot_2023_04_25_at_12_03_54_AM.png)
 
 ## Lab 3
 
@@ -88,4 +88,4 @@ The AMP deployed a visual dashboard to expose the results from the Machine Learn
 2. There will be an app called `Application to serve flight prediction front end app`. Click the link.
 3. This will take you to a visual dashboard, where you can pass various inputs to the model and get a prediction back. You can use your own datapoints as inputs to this app.
 
-![Screen_Shot_2022-09-01_at_5-16-41_PM.png](image/Screen_Shot_2022-09-01_at_5-16-41_PM.png)
+![Screen_Shot_2023_04_25_at_12_08_43_AM.png](images/Screen_Shot_2023_04_25_at_12_08_43_AM.png)
