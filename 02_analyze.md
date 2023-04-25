@@ -2,6 +2,10 @@
 
 In this exercise, we will run interactive analysis of the data we brought in through a data pipeline into the Cloudera Data Warehouse.
 
+## Pre-requisite
+
+1. Please ensure that you have completed the [lab](01_ingest.md#lab-2-ingest-into-other-tables-needed-for-analysis-and-visualization) to ingest data needed for Analysis.
+
 ## Lab 1: Explore the data ingested
 
 1. We will continue to analyze the data in Hue.
