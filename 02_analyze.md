@@ -9,10 +9,9 @@ In this exercise, we will run interactive analysis of the data we brought in thr
 ## Lab 1: Explore the data ingested
 
 1. We will continue to analyze the data in Hue.
-2. Click on Editor - Hive to go to your interactive editor
-3. On the left pane, you will see a catalog of all the `databases` available. Click on "airlines"
-4. On the left pane, you will now see a list of all the `tables` ingested through your ETL/ELT pipeline in the 01_ingest phase
-5. You can now click on the table name to explore the schema of the table and run any sample queries to explore the dataset
+2. On the left pane, you will see a catalog of all the `databases` available. Click on "airlines"
+3. On the left pane, you will now see a list of all the `tables` ingested through your ETL/ELT pipeline in the 01_ingest phase
+4. You can now click on the table name to explore the schema of the table and run any sample queries to explore the dataset
 
 ![Screen_Shot_2023_04_24_at_11_14_56_PM.png](images/Screen_Shot_2023_04_24_at_11_14_56_PM.png)
 
@@ -20,7 +19,11 @@ In this exercise, we will run interactive analysis of the data we brought in thr
 
 We will now run interactive queries to build business intelligence reports. The business wants to build Passenger Manifest & Layover Reporting dashboard to get actionable insights out of the data.
 
-You can run the below queries on the interactive query editor as above.
+You can run the below queries on the interactive query editor.
+
+1. Click on Editor - Hive to go to your interactive editor
+
+![Screen_Shot_2023_04_24_at_11_22_07_PM.png](images/Screen_Shot_2023_04_24_at_11_22_07_PM.png)
 
 **Query 1:**  Query to find all international flights: flights where destination airport country is not the same as origin airport country
 
