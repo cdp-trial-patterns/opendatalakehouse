@@ -8,8 +8,12 @@ In this lab, we will build an end\-to\-end machine learning project using Cloude
 
 ## Lab 1
 
+You can always go back to CDP Home Page (or any other services) by clicking the bento menu icon in the top left corner of Data Hub page or Cloudera Machine Learning Page
+
+![Screen_Shot_2023_04_24_at_11_33_56_PM.png](images/Screen_Shot_2023_04_24_at_11_33_56_PM.png)
+
 Note the environment name as it will be used as one of the inputs while we create our Machine Learning model.
-![Screen_Shot_2022-09-01_at_4-05-17_PM.png](images/Screen_Shot_2023_04_13_at_9_16_46_PM.png)
+![Screen_Shot_2023_04_24_at_11_37_42_PM.png](images/Screen_Shot_2023_04_24_at_11_37_42_PM.png)
 
 1. Click on the workspace available in your Machine Learning Page
 2. Once inside your workspace, Click AMPs in the left menu
