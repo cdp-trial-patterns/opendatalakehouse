@@ -27,10 +27,14 @@ The primary goal of this is to build an ingestion data pipeline.
 
 ![Screen_Shot_2023_04_23_at_2_28_05_PM.png](images/Screen_Shot_2023_04_23_at_2_28_05_PM.png)
 
-3. 
+3. In the list of Services in the Data Hub, click on **Hue** to access Hive.
 
+![Screen_Shot_2023_04_23_at_2_28_36_PM.png](images/Screen_Shot_2023_04_23_at_2_28_36_PM.png)
 
-Click on the cluster to view services of the Data Hub cluster
-Click on “Hue” to open Hue
-Click on editor and create a database to ingest files
+4. You will be taken to Hive Editor. Create a database called **airlines** using the below query - 
+
+```
+create database airlines;
+```
+
 
