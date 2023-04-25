@@ -39,7 +39,7 @@ You can always go back to CDP Home Page by clicking the bento menu icon in the t
 3. Leave the rest of the fields to be default.
 4. Click Launch Project
 
-![Screen_Shot 2023_04_24_at_11_53_16_PM.png](images/Screen_Shot 2023_04_24_at_11_53_16_PM.png)
+![Screen_Shot_2023_04_24_at_11_53_16_PM.png](images/Screen_Shot_2023_04_24_at_11_53_16_PM.png)
 
 Cloudera Machine Learning will automatically execute the following 10 steps:
 
