@@ -9,7 +9,7 @@ In this exercise, we will run interactive analysis of the data we brought in thr
 3. On the left pane, you will see a catalog of all the `databases` available. Click on "airlines"
 4. On the left pane, you will now see a list of all the `tables` ingested through your ETL/ELT pipeline in the 01_ingest phase
 
-![Screen_Shot_2022-09-19_at_9-42-22_PM.png](image/Screen_Shot_2022-09-19_at_9-42-22_PM.png)
+![Screen_Shot_2023_04_23_at_3_05_01_PM.png](image/Screen_Shot_2023_04_23_at_3_05_01_PM.png)
 
 6. You can now click on the table name to explore the schema of the table and run any sample queries to explore the dataset
 
