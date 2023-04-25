@@ -27,7 +27,7 @@ You can always go back to CDP Home Page by clicking the bento menu icon in the t
 7. Now click Configure Project
 8. Wait for the Project to be created on the Project page \(takes a few seconds to load the code locally\)
 
-![Screen_Shot_2023_04_24_at_11_49_32_PM.png](image/Screen_Shot_2023_04_24_at_11_49_32_PM.png)
+![Screen_Shot_2023_04_24_at_11_49_32_PM.png](images/Screen_Shot_2023_04_24_at_11_49_32_PM.png)
 
 1. Once complete, click on the project we just created
 2. CML will now gives a series of Environment Variables for the user to fill in. Fill as below:
@@ -39,7 +39,7 @@ You can always go back to CDP Home Page by clicking the bento menu icon in the t
 3. Leave the rest of the fields to be default.
 4. Click Launch Project
 
-![Screen_Shot 2023_04_24_at_11_53_16_PM.png](Screen_Shot 2023_04_24_at_11_53_16_PM.png)
+![Screen_Shot 2023_04_24_at_11_53_16_PM.png](images/Screen_Shot 2023_04_24_at_11_53_16_PM.png)
 
 Cloudera Machine Learning will automatically execute the following 10 steps:
 
