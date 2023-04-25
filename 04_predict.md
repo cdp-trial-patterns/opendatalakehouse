@@ -8,19 +8,23 @@ In this lab, we will build an end\-to\-end machine learning project using Cloude
 
 ## Lab 1
 
-You can always go back to CDP Home Page (or any other services) by clicking the bento menu icon in the top left corner of Data Hub page or Cloudera Machine Learning Page
+You can always go back to CDP Home Page by clicking the bento menu icon in the top left corner of Data Hub page or Cloudera Machine Learning page
 
 ![Screen_Shot_2023_04_24_at_11_33_56_PM.png](images/Screen_Shot_2023_04_24_at_11_33_56_PM.png)
 
-Note the environment name as it will be used as one of the inputs while we create our Machine Learning model.
+1. Select Machine Learning in Cloudera Data Platform Home Page
+
+![Screen_Shot_2023_04_24_at_11_42_33_PM.png](images/Screen_Shot_2023_04_24_at_11_42_33_PM.png)
+
+2. Note the environment name as it will be used as one of the inputs while we create our Machine Learning model.
 ![Screen_Shot_2023_04_24_at_11_37_42_PM.png](images/Screen_Shot_2023_04_24_at_11_37_42_PM.png)
 
-1. Click on the workspace available in your Machine Learning Page
-2. Once inside your workspace, Click AMPs in the left menu
-3. Cloudera Machine Learning\(CML\) will show you a catalog of available Machine Learning Prototypes
-4. Search for Canceled Flight Prediction prototype in the search box, click the prototype
-5. Now click Configure Project
-6. Wait for the Project to be created on the Project page \(takes a few seconds to load the code locally\)
+3. Click on the workspace available in your Machine Learning Page
+4. Once inside your workspace, Click AMPs in the left menu
+5. Cloudera Machine Learning\(CML\) will show you a catalog of available Machine Learning Prototypes
+6. Search for Canceled Flight Prediction prototype in the search box, click the prototype
+7. Now click Configure Project
+8. Wait for the Project to be created on the Project page \(takes a few seconds to load the code locally\)
 
 ![Screen_Shot_2022-09-01_at_4-10-15_PM.png](image/Screen_Shot_2022-09-01_at_4-10-15_PM.png)
 
