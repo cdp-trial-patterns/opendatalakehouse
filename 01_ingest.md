@@ -59,9 +59,6 @@ Also, ensure that **month** is of Type **bigint** (At times, it is identified as
 ![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
 
 11. Click Submit. This is a file with 462 Million records, it will take a 3 - 4 minutes to import into the table. 
-
-![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
-
 12. Query the newly loaded table, execute the below query - 
 
 ```
@@ -71,5 +68,3 @@ select count(*) from airlines.flights;
 ![Screen_Shot_2023_04_23_at_3_00_32_PM.png](images/Screen_Shot_2023_04_23_at_3_00_32_PM.png)
 
 13. From here, you can go to Lab 2 to ingest the remaining files or you can head to [lab around Predict](04_predict.md) to build an end-to-end machine learning project using Cloudera Machine Learning
-
-
