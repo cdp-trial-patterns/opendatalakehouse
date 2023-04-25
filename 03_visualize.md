@@ -2,6 +2,10 @@
 
 # Embedded Data Visualizations
 
+## Pre-requisite
+
+1. Please ensure that you have completed the [lab](01_ingest.md#lab-2-ingest-into-other-tables-needed-for-analysis-and-visualization) to ingest data needed for Visualization.
+
 ## Lab 1: Enable data visualization:
 
 1. Go to your Machine Learning workspace
