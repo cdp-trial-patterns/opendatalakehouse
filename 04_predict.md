@@ -16,7 +16,8 @@ You can always go back to CDP Home Page by clicking the bento menu icon in the t
 
 ![Screen_Shot_2023_04_24_at_11_42_33_PM.png](images/Screen_Shot_2023_04_24_at_11_42_33_PM.png)
 
-2. Note the environment name as it will be used as one of the inputs while we create our Machine Learning model.
+2. Note the **Environment Name** as it will be used as one of the inputs while we create our Machine Learning model.
+
 ![Screen_Shot_2023_04_24_at_11_37_42_PM.png](images/Screen_Shot_2023_04_24_at_11_37_42_PM.png)
 
 3. Click on the workspace available in your Machine Learning Page
@@ -26,21 +27,19 @@ You can always go back to CDP Home Page by clicking the bento menu icon in the t
 7. Now click Configure Project
 8. Wait for the Project to be created on the Project page \(takes a few seconds to load the code locally\)
 
-![Screen_Shot_2022-09-01_at_4-10-15_PM.png](image/Screen_Shot_2022-09-01_at_4-10-15_PM.png)
+![Screen_Shot_2023_04_24_at_11_49_32_PM.png](image/Screen_Shot_2023_04_24_at_11_49_32_PM.png)
 
 1. Once complete, click on the project we just created
 2. CML will now gives a series of Environment Variables for the user to fill in. Fill as below:
     1. `STORAGE_MODE` as external
-    2. `SPARK_CONNECTION_NAME` with the Environment field we collected above.
+    2. `SPARK_CONNECTION_NAME` with the Environment Name we collected above.
     3. `DW_DATABASE` as `airlines`
     4. `DW_TABLE` as `flights`
     5. `USE_PREBUILT_MODEL` as `yes`
 3. Leave the rest of the fields to be default.
 4. Click Launch Project
 
-![Screen_Shot_2022-09-01_at_4-32-51_PM.png](image/Screen_Shot_2022-09-01_at_4-32-51_PM.png)
-
-![Screen_Shot_2022-09-01_at_4-33-00_PM.png](image/Screen_Shot_2022-09-01_at_4-33-00_PM.png)
+![Screen_Shot 2023_04_24_at_11_53_16_PM.png](Screen_Shot 2023_04_24_at_11_53_16_PM.png)
 
 Cloudera Machine Learning will automatically execute the following 10 steps:
 
