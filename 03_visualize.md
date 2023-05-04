@@ -29,9 +29,9 @@ In this lab, we will create a dataset that contains a correlation across the var
 5. Enter the below SQL query into the field:
 
 ```
-select B.description as 'carrier', C.city as 'origincity', D.city 'destinationcity', A.* ,
-CAST( CONCAT(CAST( `year` AS STRING) , '-',  CAST( `month` AS STRING)  ,  '-',  CAST( `dayofmonth` AS STRING) )
-AS DATE FORMAT 'yyyy-mm-dd' ) as flightdate
+select B.description as 'carrier', C.city as 'origincity', D.city 'destinationcity', A.*,
+CAST(CONCAT(CAST(`year` AS STRING) , '-', CAST(`month` AS STRING), '-', CAST(`dayofmonth` AS STRING))
+AS DATE FORMAT 'yyyy-mm-dd') as flightdate
 from airlines.flights A
 INNER JOIN airlines.airlines B ON A.uniquecarrier = B.code
 INNER JOIN airlines.airports C ON A.origin = C.iata
