@@ -22,7 +22,7 @@ It will take a few minutes for the data application to launch.
 
 In this lab, we will create a dataset that contains a correlation across the various datasets we have ingested and prepare for creating visualizations.
 
-1. Once you create a project as described in `Lab 1`, click on the `Data` tab then on `All Connections` tab. You should see a connection containing the name `DWarehouse`. Click this.
+1. Once you create a project as described in `Lab 1`, click on the `Data` tab then on `All Connections` tab. You should see a connection containing the name `dataengg`. Click this.
 2. Now click `New Dataset`
 3. `Dataset title` as `airlines-master`
 4. `Data Source` as `From SQL`
@@ -31,11 +31,11 @@ In this lab, we will create a dataset that contains a correlation across the var
 ```
 select B.description as 'carrier', C.city as 'origincity', D.city 'destinationcity', A.* ,
 CAST( CONCAT(CAST( `year` AS STRING) , '-',  CAST( `month` AS STRING)  ,  '-',  CAST( `dayofmonth` AS STRING) )
-          AS DATE FORMAT 'yyyy-mm-dd' ) as flightdate
-          from airlines.flights A
-                INNER JOIN airlines.airlines B ON A.uniquecarrier = B.code
-                INNER JOIN airlines.airports C ON A.origin = C.iata
-                INNER JOIN airlines.airports D ON A.dest = D.iata
+AS DATE FORMAT 'yyyy-mm-dd' ) as flightdate
+from airlines.flights A
+INNER JOIN airlines.airlines B ON A.uniquecarrier = B.code
+INNER JOIN airlines.airports C ON A.origin = C.iata
+INNER JOIN airlines.airports D ON A.dest = D.iata
 ```
 
 6. Click `Create`
