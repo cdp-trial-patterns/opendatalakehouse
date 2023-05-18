@@ -23,10 +23,14 @@ It will take a few minutes for the data application to launch.
 In this lab, we will create a dataset that contains a correlation across the various datasets we have ingested and prepare for creating visualizations.
 
 1. Once you create a project as described in `Lab 1`, click on the `Data` tab then on `All Connections` tab. You should see a connection containing the name `dataengg`. Click this.
-2. Now click `New Dataset`
-3. `Dataset title` as `airlines-master`
-4. `Data Source` as `From SQL`
-5. Enter the below SQL query into the field:
+2. At this point, you will see an error - `Could not read a list of databases` with a clearly laid out steps to update your "WORKLOAD_PASSWORD". Please update the workload password and restart the application.  
+
+![workload_passowrd_image.png](images/workload_passowrd_image.png)
+
+3. Now click `New Dataset`
+4. `Dataset title` as `airlines-master`
+5. `Data Source` as `From SQL`
+6. Enter the below SQL query into the field:
 
 ```
 select B.description as 'carrier', C.city as 'origincity', D.city 'destinationcity', A.*,
@@ -44,7 +48,7 @@ INNER JOIN airlines.airports D ON A.dest = D.iata
 
 In this lab, we will create a sample dashboard to visualize the reports for a business user.
 
-1. Click on the `dataset` we created in Lab 3 and then click `New Dashboard` icon.
+1. Click on the `dataset` we created in Lab 2 and then click `New Dashboard` icon.
 
 ![Screen_Shot_2022-09-01_at_1-28-26_PM.png](images/Screen_Shot_2022-09-01_at_1-28-26_PM.png)
 
