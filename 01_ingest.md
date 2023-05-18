@@ -41,9 +41,9 @@ create database airlines;
 ![Screen_Shot_2023_04_23_at_2_35_16_PM.png](images/Screen_Shot_2023_04_23_at_2_35_16_PM.png)
 
 6. You will be taken to **Import to table** screen. Keeping _Remote File_ as Type, click **..** in the Path. 
-7. Select S3 and you will see file path as s3a://<environment_name>/user/<user_name>. **Change path to s3a://<environment_name>/data**.
+7. Select S3 and you will see file path as s3a://<environment_name>/user/<user_name>. **Change path to s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
 
-Source files have been pre-loaded to the S3 folder, _data_
+Source files have been pre-loaded to the S3 folder, _airline-demo-data_
 
 ![Screen_Shot_2023_04_23_at_2_36_50_PM.png](images/Screen_Shot_2023_04_23_at_2_36_50_PM.png)
 
