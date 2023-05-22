@@ -1,6 +1,6 @@
 # 02_analyze
 
-In this exercise, we will run interactive analysis of the data we brought in through a data pipeline into the Cloudera Data Warehouse.
+In this exercise, we will run interactive analysis of the data we brought in through a data pipeline into the Cloudera's Data Warehouse - Impala.
 
 ## Pre-requisite
 
