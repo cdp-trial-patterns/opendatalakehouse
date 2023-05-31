@@ -89,3 +89,27 @@ where
 group by
    a.leg1uniquecarrier;
 ```
+
+**Query 4:** Number of passengers on airlines that have elongated layovers for an international flight caused by delayed connection
+```
+SELECT
+   a.leg1uniquecarrier as carrier,
+   count(a.leg1uniquecarrier) as passengers
+FROM
+   `airlines`.unique_tickets a,
+   `airlines`.flights o,
+   `airlines`.flights d
+where
+       a.leg1flightnum = o.flightnum
+   AND a.leg1uniquecarrier = o.uniquecarrier
+   AND a.leg1origin = o.origin
+   AND a.leg1dest = o.dest
+   AND a.leg1month = o.month
+   AND a.leg1dayofmonth = o.dayofmonth
+   AND a.leg1dayofweek = o.`dayofweek`
+   AND a.leg2uniquecarrier = d.uniquecarrier
+   AND a.leg2origin = d.origin
+group by
+   a.leg1uniquecarrier;
+```
+
