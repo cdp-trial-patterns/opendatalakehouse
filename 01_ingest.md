@@ -85,11 +85,6 @@ select count(*) from airlines.flights;
 ![Screenshot20230601at70407AM.png](images/Screenshot20230601at70407AM.png)
 
 7. In the Next Screen, verify that the Destination Name is **airlines.airlines**. 
-
-Also, ensure that **month** is of Type **bigint** (This is identified as boolean as the sample data has only 0s). 
-
-![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
-
 8. Click Submit. 
 9. Query the newly loaded table, execute the below query - 
 
