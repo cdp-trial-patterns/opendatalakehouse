@@ -93,7 +93,7 @@ select count(*) from airlines.airlines;
 ```
 
 10. Similar to how airlines.csv was uploaded, we will upload other csv files present in **s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
-11. Select the each of the below files to create appropriate tables
+11. Select each of the below files to create appropriate tables
     - airports.csv
     - planes.csv
     - unique_tickets.csv
