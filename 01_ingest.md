@@ -45,7 +45,7 @@ create database airlines;
 
 Source files have been pre-loaded to the S3 folder, _airline-demo-data_
 
-![Screen_Shot_2023_04_23_at_2_36_50_PM.png](images/Screen_Shot_2023_04_23_at_2_36_50_PM.png)
+![Screenshot20230531at51803PM.png](images/Screenshot20230531at51803PM.png)
 
 8. Select **flights.csv**. The file will be parsed and the appropriate columns will be identified. 
 9. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected. Click Next.
