@@ -23,7 +23,7 @@ It will take a few minutes for the data application to launch.
 In this lab, we will create a dataset that contains a correlation across the various datasets we have ingested and prepare for creating visualizations.
 
 1. Once you create a project as described in `Lab 1`, click on the `Data` tab then on `All Connections` tab. You should see a connection containing the name `dwarehouse`. Click this.
-2. You will also see an error - `Could not read a list of databases`. This is due to **Workload Password** not being set. Based on the instructions to update your "WORKLOAD_PASSWORD", please update workload password and restart the application.  
+2. You will see an error - `Could not read a list of databases`. This is due to **Workload Password** not being set. Based on the instructions to update your "WORKLOAD_PASSWORD", please update workload password and restart the application.  
 
 ![workload_passowrd_image.png](images/workload_passowrd_image.png)
 
