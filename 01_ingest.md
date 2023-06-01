@@ -25,7 +25,7 @@ The primary goal of this is to build an ingestion data pipeline.
 
 2. In the Data Hub Clusters landing page, click on the Data Hub called **dwarehouse**. 
 
-![Screen_Shot_2023_04_23_at_2_28_05_PM.png](images/Screenshot 2023-05-31 at 5.13.05 PM.png)
+![Screenshot_2023_05_31_at_5_13_05_PM.png](images/Screenshot_2023_05_31_at_5_13_05_PM.png)
 
 3. In the list of Services in the Data Hub, click on **Hue** to access Hive.
 
