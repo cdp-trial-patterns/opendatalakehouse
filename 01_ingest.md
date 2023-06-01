@@ -54,7 +54,7 @@ Source files have been pre-loaded to the S3 folder, _airline-demo-data_
 
 10. In the Next Screen, verify that the Destination Name is **airlines.flights**. 
 
-Also, ensure that **month** is of Type **bigint** (At times, it is identified as boolean). 
+Also, ensure that **month** is of Type **bigint** (This is identified as boolean as the sample data has only 0s). 
 
 ![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
 
@@ -65,7 +65,7 @@ Also, ensure that **month** is of Type **bigint** (At times, it is identified as
 select count(*) from airlines.flights;
 ```
 
-![Screen_Shot_2023_04_23_at_3_00_32_PM.png](images/Screen_Shot_2023_04_23_at_3_00_32_PM.png)
+![Screenshot20230531at52523PM.png](images/Screenshot20230531at52523PM.png)
 
 13. From here, you can go to Lab 2 to ingest the remaining files or you can head to [lab around Predict](04_predict.md) to build an end-to-end machine learning project using Cloudera Machine Learning
 
