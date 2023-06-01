@@ -27,11 +27,11 @@ The primary goal of this is to build an ingestion data pipeline.
 
 ![Screenshot_2023_05_31_at_5_13_05_PM.png](images/Screenshot_2023_05_31_at_5_13_05_PM.png)
 
-3. In the list of Services in the Data Hub, click on **Hue** to access Hive.
+3. In the list of Services in the Data Hub, click on **Hue** to access Impala.
 
-![Screen_Shot_2023_04_23_at_2_28_36_PM.png](images/Screen_Shot_2023_04_23_at_2_28_36_PM.png)
+![Screenshot_2023_05_31_at_5_13_36_PM.png](images/Screenshot_2023_05_31_at_5_13_36_PM.png)
 
-4. You will be taken to Hive Editor. Create a database called **airlines** using the below query - 
+4. You will be taken to Impala Editor. Create a database called **airlines** using the below query - 
 
 ```
 create database airlines;
