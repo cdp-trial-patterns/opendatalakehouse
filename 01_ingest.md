@@ -71,15 +71,18 @@ select count(*) from airlines.flights;
 
 ## Lab 2: Ingest into other Tables needed for Analysis and Visualization
 
-1. Similar to how flights.csv was uploaded, we will upload other csv files present in s3a://<environment_name>/data.
+1. Similar to how flights.csv was uploaded, we will upload other csv files present in **s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
 2. In airlines database, click + to go to "Import to table" screen.
-3. Select the each of the below files to create appropriate tables
+
+![Screenshot20230601at65527AM.png](images/Screenshot20230601at65527AM.png)
+
+4. Select the each of the below files to create appropriate tables
     - airlines.csv
     - airports.csv
     - planes.csv
     - unique_tickets.csv
-4. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected.
-5. In the Next Screen, verify that the Destination Name is **airlines.<table_name>**.
-6. Each of these files have a few 1000 records and import will happen in minutes.
+5. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected.
+6. In the Next Screen, verify that the Destination Name is **airlines.<table_name>**.
+7. Each of these files have a few 1000 records and import will happen in minutes.
 
 We are now ready to [Analyze](02_analyze.md), [Visualize](03_visualize.md) and [Predict](04_predict.md) Data!
