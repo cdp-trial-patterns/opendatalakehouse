@@ -80,14 +80,14 @@ WHERE
 
 ```
 SELECT
-   a.leg1uniquecarrier as carrier,
-   count(a.leg1uniquecarrier) as passengers
+    a.leg1uniquecarrier as carrier,
+    count(a.leg1uniquecarrier) as passengers
 FROM
    `airlines`.unique_tickets a
 where
-   a.leg2deptime - a.leg1arrtime>90
+    a.leg2deptime - a.leg1arrtime>90
 group by
-   a.leg1uniquecarrier;
+    a.leg1uniquecarrier;
 ```
 
 **Query 4:** Number of passengers on airlines that have elongated layovers for an international flight caused by delayed connection
