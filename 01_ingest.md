@@ -76,13 +76,34 @@ select count(*) from airlines.flights;
 
 ![Screenshot20230601at65527AM.png](images/Screenshot20230601at65527AM.png)
 
-4. Select the each of the below files to create appropriate tables
-    - airlines.csv
+3. Keeping _Remote File_ as Type, click **..** in the Path. 
+4. Select S3 and if you are not in the same folder as before(airline-demo-data), **Change path to s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
+
+5. Select **airlines.csv**. The file will be parsed and the appropriate columns will be identified. 
+6. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected. Click Next.
+
+![Screenshot20230601at70407AM.png](images/Screenshot20230601at70407AM.png)
+
+7. In the Next Screen, verify that the Destination Name is **airlines.airlines**. 
+
+Also, ensure that **month** is of Type **bigint** (This is identified as boolean as the sample data has only 0s). 
+
+![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
+
+8. Click Submit. 
+9. Query the newly loaded table, execute the below query - 
+
+```
+select count(*) from airlines.airlines;
+```
+
+10. Similar to how airlines.csv was uploaded, we will upload other csv files present in **s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
+11. Select the each of the below files to create appropriate tables
     - airports.csv
     - planes.csv
     - unique_tickets.csv
-5. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected.
-6. In the Next Screen, verify that the Destination Name is **airlines.<table_name>**.
-7. Each of these files have a few 1000 records and import will happen in minutes.
+12. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected.
+13. In the Next Screen, verify that the Destination Name is **airlines.<table_name>**.
+14. Each of these files have a few 1000 records and import will happen in minutes.
 
 We are now ready to [Analyze](02_analyze.md), [Visualize](03_visualize.md) and [Predict](04_predict.md) Data!
