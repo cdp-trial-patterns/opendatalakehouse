@@ -21,9 +21,9 @@ We will now run interactive queries to build business intelligence reports. The 
 
 You can run the below queries on the interactive query editor.
 
-1. Click on Editor - Hive to go to your interactive editor
+1. Click on Editor - Impala to go to your interactive editor
 
-![Screen_Shot_2023_04_24_at_11_22_07_PM.png](images/Screen_Shot_2023_04_24_at_11_22_07_PM.png)
+![Screenshot20230601at72516AM.png](images/Screenshot20230601at72516AM.png)
 
 **Query 1:**  Query to find all international flights: flights where destination airport country is not the same as origin airport country
 
