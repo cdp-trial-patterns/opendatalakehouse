@@ -29,24 +29,24 @@ You can run the below queries on the interactive query editor.
 
 ```
 SELECT DISTINCT
- flightnum,
- uniquecarrier,
- origin,
- dest,
- `month`,
- dayofmonth,
- `dayofweek`
+    flightnum,
+    uniquecarrier,
+    origin,
+    dest,
+    `month`,
+    dayofmonth,
+    `dayofweek`
 FROM
-   `airlines`.flights f,
-   `airlines`.airports oa,
-   `airlines`.airports da
+    `airlines`.flights f,
+    `airlines`.airports oa,
+    `airlines`.airports da
 WHERE
-   f.origin = oa.iata
-   and f.dest = da.iata
-   And oa.country <> da.country
+    f.origin = oa.iata
+    and f.dest = da.iata
+    and oa.country <> da.country
 ORDER BY
-   `month` ASC,
-   dayofmonth ASC;
+    `month` ASC,
+    dayofmonth ASC;
 ```
 
 **Query 2:** Query to explore passenger manifest data:  do we have international connecting flights?
