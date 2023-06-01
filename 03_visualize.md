@@ -22,24 +22,15 @@ It will take a few minutes for the data application to launch.
 
 In this lab, we will create a dataset that contains a correlation across the various datasets we have ingested and prepare for creating visualizations.
 
-1. Once you create a project as described in `Lab 1`, click on the `Data` tab then on `All Connections` tab. You should see a connection containing the name `dataengg`. Click this.
-2. Click on settings next to dataengg 
-
-![dataengg_settings.png](images/dataengg_settings.png)
-
-3. Go to advanced tab
-4. Remove "viz" from Application Name
-
-![dataengg_advanced_tab.png](images/dataengg_advanced_tab.png)
-
-5. You will also see an error - `Could not read a list of databases` with a clearly laid out steps to update your "WORKLOAD_PASSWORD". Please update the workload password and restart the application.  
+1. Once you create a project as described in `Lab 1`, click on the `Data` tab then on `All Connections` tab. You should see a connection containing the name `dwarehouse`. Click this.
+2. You will also see an error - `Could not read a list of databases`. This is due to **Workload Password** not being set. Based on the instructions to update your "WORKLOAD_PASSWORD", please update workload password and restart the application.  
 
 ![workload_passowrd_image.png](images/workload_passowrd_image.png)
 
-6. Now click `New Dataset`
-7. `Dataset title` as `airlines-master`
-8. `Data Source` as `From SQL`
-9. Enter the below SQL query into the field:
+3. Now click `New Dataset`
+4. `Dataset title` as `airlines-master`
+5. `Data Source` as `From SQL`
+6. Enter the below SQL query into the field:
 
 ```
 select B.description as 'carrier', C.city as 'origincity', D.city 'destinationcity', A.*,
@@ -51,7 +42,7 @@ INNER JOIN airlines.airports C ON A.origin = C.iata
 INNER JOIN airlines.airports D ON A.dest = D.iata
 ```
 
-6. Click `Create`
+7. Click `Create`
 
 ## Lab 3: Create a dashboard
 
