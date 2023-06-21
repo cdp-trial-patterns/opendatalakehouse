@@ -109,6 +109,10 @@ where
    AND a.leg1dayofweek = o.`dayofweek`
    AND a.leg2uniquecarrier = d.uniquecarrier
    AND a.leg2origin = d.origin
+   AND a.leg2dest = d.dest
+   AND a.leg2month = d.month
+   AND a.leg2dayofmonth = d.dayofmonth
+   AND a.leg2dayofweek = d.`dayofweek`
 group by
    a.leg1uniquecarrier;
 ```
