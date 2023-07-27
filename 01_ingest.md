@@ -40,30 +40,23 @@ The primary goal of this is to build an ingestion data pipeline.
 ```
 create database airlines;
 ```
-5. Go inside the airlines database and click **+** to create a table by importing from a CSV file
 
-![Screenshot_2023_05_31_at_51642PM.png](images/Screenshot_2023_05_31_at_51642PM.png)
+5. Create tables needed for further analysis, visualization and prediction
 
-6. You will be taken to **Import to table** screen. Keeping _Remote File_ as Type, click **..** in the Path. 
-7. Select S3 and you will see file path as s3a://<environment_name>/user/<user_name>. **Change path to s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
+   a. We start with **flights** table
 
-Source files have been pre-loaded to the S3 folder, _airline-demo-data_
+```
+drop table if exists airlines.flights;
 
-![Screenshot20230531at51803PM.png](images/Screenshot20230531at51803PM.png)
+CREATE EXTERNAL TABLE airlines.flights (month int, dayofmonth int, dayofweek int, deptime int, crsdeptime int, arrtime int, crsarrtime int, uniquecarrier string, flightnum int, tailnum string, actualelapsedtime int, crselapsedtime int, airtime int, arrdelay int, depdelay int, origin string, dest string, distance int, taxiin int, taxiout int, cancelled int, cancellationcode string, diverted string, carrierdelay int, weatherdelay int, nasdelay int, securitydelay int, lateaircraftdelay int, year int)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
+STORED AS TEXTFILE LOCATION 's3a://${cdp_environment_name}/trial-odlh-data/airline-demo-data/flights' tblproperties("skip.header.line.count"="1");
 
-8. Select **flights.csv**. The file will be parsed and the appropriate columns will be identified. 
-9. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected. Click Next.
+```
 
-![Screen_Shot_2023_04_23_at_2_52_46_PM.png](images/Screen_Shot_2023_04_23_at_2_52_46_PM.png)
+* In **cdp_environment_name** field, enter the environment name you captured earlier
 
-10. In the Next Screen, verify that the Destination Name is **airlines.flights**. 
-
-Also, ensure that **month** is of Type **bigint** (This is identified as boolean as the sample data has only 0s). 
-
-![Screen_Shot_2023_04_23_at_2_55_57_PM.png](images/Screen_Shot_2023_04_23_at_2_55_57_PM.png)
-
-11. Click Submit. This is a file with 462 Million records, it will take a 3 - 4 minutes to import into the table. 
-12. Query the newly loaded table, execute the below query - 
+6. Query the newly created table, execute the below query - 
 
 ```
 select count(*) from airlines.flights;
@@ -73,10 +66,11 @@ select count(*) from airlines.flights;
 
 13. From here, you can go to Lab 2 to ingest the remaining files or you can head to [lab around Predict](04_predict.md) to build an end-to-end machine learning project using Cloudera Machine Learning
 
-## Lab 2: Ingest into other Tables needed for Analysis and Visualization
+## Lab 2: Create other Tables needed for Analysis and Visualization
 
-1. Similar to how flights.csv was uploaded, we will upload other csv files present in **s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
-2. In airlines database, click + to go to "Import to table" screen.
+1. Similar to how airlines.flights was created, we will create other tables with data pre-loaded in S3.
+2. 
+3. In airlines database, click + to go to "Import to table" screen.
 
 ![Screenshot20230601at65527AM.png](images/Screenshot20230601at65527AM.png)
 
