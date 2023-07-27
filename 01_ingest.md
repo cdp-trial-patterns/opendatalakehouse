@@ -23,7 +23,11 @@ The primary goal of this is to build an ingestion data pipeline.
 
 ![Screen_Shot_2023_04_23_at_2_27_29_PM.png](images/Screen_Shot_2023_04_23_at_2_27_29_PM.png)
 
-2. In the Data Hub Clusters landing page, click on the Data Hub called **dwarehouse**. 
+2. In the Data Hub Clusters landing page - 
+
+   a. **Note the Environment Name** as it will be used as one of the inputs while we create tables
+   
+   b. Click on the Data Hub called **dwarehouse**. 
 
 ![Screenshot_2023_05_31_at_5_13_05_PM.png](images/Screenshot_2023_05_31_at_5_13_05_PM.png)
 
