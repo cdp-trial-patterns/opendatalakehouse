@@ -71,7 +71,7 @@ select count(*) from airlines.flights;
 1. Similar to how airlines.flights was created, we will create other tables with data pre-loaded in S3.
 2. Execute the below queries to create the following tables - planes, airlines, airports, unique_tickets
 
-   a. Create **planes** table
+    a. Create **planes** table
 
 ```
 drop table if exists airlines.planes;
