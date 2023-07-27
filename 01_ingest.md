@@ -72,8 +72,6 @@ select count(*) from airlines.flights;
 2. Execute the below queries to create the following tables - planes, airlines, airports, unique_tickets
 
    a. Create **planes** table
-   d. Create **unique_tickets** table
-   c. 
 
 ```
 drop table if exists airlines.planes;
