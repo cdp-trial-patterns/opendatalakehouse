@@ -41,9 +41,7 @@ The primary goal of this is to build an ingestion data pipeline.
 create database airlines;
 ```
 
-5. Create tables needed for further analysis, visualization and prediction
-
-   a. We start with **flights** table
+5. Create **flights** table
 
 ```
 drop table if exists airlines.flights;
