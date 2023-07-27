@@ -69,34 +69,56 @@ select count(*) from airlines.flights;
 ## Lab 2: Create other Tables needed for Analysis and Visualization
 
 1. Similar to how airlines.flights was created, we will create other tables with data pre-loaded in S3.
-2. 
-3. In airlines database, click + to go to "Import to table" screen.
+2. Execute the below queries to create the following tables - planes, airlines, airports, unique_tickets
 
-![Screenshot20230601at65527AM.png](images/Screenshot20230601at65527AM.png)
-
-3. Keeping _Remote File_ as Type, click **..** in the Path. 
-4. Select S3 and if you are not in the same folder as before(airline-demo-data), **Change path to s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
-
-5. Select **airlines.csv**. The file will be parsed and the appropriate columns will be identified. 
-6. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected. Click Next.
-
-![Screenshot20230601at70407AM.png](images/Screenshot20230601at70407AM.png)
-
-7. In the Next Screen, verify that the Destination Name is **airlines.airlines**. 
-8. Click Submit. 
-9. Query the newly loaded table, execute the below query - 
+   a. Create **planes** table
+   d. Create **unique_tickets** table
+   c. 
 
 ```
-select count(*) from airlines.airlines;
+drop table if exists airlines.planes;
+
+CREATE EXTERNAL TABLE airlines.planes (tailnum string, owner_type string, manufacturer string, issue_date string, model string, status string, aircraft_type string, engine_type string, year int)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
+STORED AS TEXTFILE LOCATION 's3a://${cdp_environment_name}/trial-odlh-data/airline-demo-data/planes' tblproperties("skip.header.line.count"="1");
 ```
 
-10. Similar to how airlines.csv was uploaded, we will upload other csv files present in **s3a://<environment_name>/trial-odlh-data/airline-demo-data/**.
-11. Select each of the below files to create appropriate tables
-    - airports.csv
-    - planes.csv
-    - unique_tickets.csv
-12. Ensure that "Field Separator" is Comma(,) and "Has Header" is selected.
-13. In the Next Screen, verify that the Destination Name is **airlines.<table_name>**.
-14. Each of these files have a few 1000 records and import will happen in minutes.
+   b. Create **airlines** table    
+
+```
+
+drop table if exists airlines.airlines;
+
+CREATE EXTERNAL TABLE airlines.airlines (code string, description string) 
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
+STORED AS TEXTFILE LOCATION 's3a://${cdp_environment_name}/trial-odlh-data/airline-demo-data/airlines' tblproperties("skip.header.line.count"="1");
+
+```
+
+   c. Create **airports** table
+
+```
+drop table if exists airlines.airports;
+
+CREATE EXTERNAL TABLE airlines.airports (iata string, airport string, city string, state string, country string, lat DOUBLE, lon DOUBLE)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
+STORED AS TEXTFILE LOCATION 's3a:///${cdp_environment_name}/trial-odlh-data/airline-demo-data/airports' tblproperties("skip.header.line.count"="1");
+
+```
+
+   d. Create **unique_tickets** table
+
+```
+drop table if exists airlines.unique_tickets;
+
+CREATE external TABLE airlines.unique_tickets (ticketnumber BIGINT, leg1flightnum BIGINT, leg1uniquecarrier STRING, leg1origin STRING,   leg1dest STRING, leg1month BIGINT, leg1dayofmonth BIGINT,   
+ leg1dayofweek BIGINT, leg1deptime BIGINT, leg1arrtime BIGINT,   
+ leg2flightnum BIGINT, leg2uniquecarrier STRING, leg2origin STRING,   
+ leg2dest STRING, leg2month BIGINT, leg2dayofmonth BIGINT,   leg2dayofweek BIGINT, leg2deptime BIGINT, leg2arrtime BIGINT ) 
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' 
+STORED AS TEXTFILE LOCATION 's3a://${cdp_environment_name}/trial-odlh-data/airline-demo-data/unique_tickets' 
+tblproperties("skip.header.line.count"="1");
+
+```
 
 We are now ready to [Analyze](02_analyze.md), [Visualize](03_visualize.md) and [Predict](04_predict.md) Data!
