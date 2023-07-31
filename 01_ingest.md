@@ -98,7 +98,7 @@ drop table if exists airlines.airports;
 
 CREATE EXTERNAL TABLE airlines.airports (iata string, airport string, city string, state string, country string, lat DOUBLE, lon DOUBLE)
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
-STORED AS TEXTFILE LOCATION 's3a:///${cdp_environment_name}/trial-odlh-data/airline-demo-data/airports' tblproperties("skip.header.line.count"="1");
+STORED AS TEXTFILE LOCATION 's3a://${cdp_environment_name}/trial-odlh-data/airline-demo-data/airports' tblproperties("skip.header.line.count"="1");
 
 ```
 
