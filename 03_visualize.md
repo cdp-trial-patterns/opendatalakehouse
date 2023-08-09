@@ -4,7 +4,7 @@
 
 ## Pre-requisite
 
-1. Please ensure that you have completed the [lab](01_ingest.md#lab-2-ingest-into-other-tables-needed-for-analysis-and-visualization) to ingest data needed for Visualization.
+1. Please ensure that you have completed the [labs](01_ingest.md#01_ingest) to ingest data needed for Visualization.
 
 ## Lab 1: Enable data visualization:
 
@@ -23,7 +23,11 @@ It will take a few minutes for the data application to launch.
 In this lab, we will create a dataset that contains a correlation across the various datasets we have ingested and prepare for creating visualizations.
 
 1. Once you create a project as described in `Lab 1`, click on the `Data` tab then on `All Connections` tab. You should see a connection containing the name `dwarehouse`. Click this.
-2. You will see an error - `Could not read a list of databases`. This is due to **Workload Password** not being set. Based on the instructions to update your "WORKLOAD_PASSWORD", please update workload password and restart the application.  
+2. You may see an error - `Could not read a list of databases`. This is due to **Workload Password** not being set. Based on the instructions to update your "WORKLOAD_PASSWORD", please update workload password and restart the application.
+    
+    * Note that you will need to setup the workload password in **two** places
+        * In the Control Plane - From CDP Home Page, by clicking on your profile in the left bottom of the page, it will take you to User Management screen in Cloudera Management Console. Head back to Cloudera Machine Learning (CML).
+        * In CML User Settings (User Settings is the last menu item in your Machine Learning Workspace) - Save the WORKLOAD_PASSWORD again in Environment Variables tab
 
 ![workload_passowrd_image.png](images/workload_passowrd_image.png)
 
