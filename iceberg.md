@@ -107,7 +107,7 @@ INSERT INTO airlines.unique_tickets
 
 ```
 
-11. Create Iceberg Table Feature
+11. **Create Iceberg Table Feature**
 
 * Create Table as Select (CTAS) - create new table
 
@@ -154,7 +154,7 @@ STORED AS ICEBERG;
 SHOW CREATE TABLE airlines.flights;
 
 ```
-In the output - look for the following - PARTITIONED BY SPEC, table_type
+In the output - look for the following - PARTITIONED BY SPEC as year, table_type is ICEBERG
 
 
 * Load Data into Partitioned Iceberg Table
