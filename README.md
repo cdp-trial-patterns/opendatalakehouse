@@ -3,7 +3,7 @@
 ## Multiple Use Cases can be tested using this Trial
 
 1. Use CDP Public Cloud service to ingest data, analyze, visualize and predict
-2. Test cool features of **Iceberg**
+2. [Test cool features of **Iceberg**](iceberg.md)
 3. [Check out **LLM Chatbot** Augmented with Enterprise Data](llm_chatbot.md)
 
 ### Use CDP Public Cloud service to ingest data, analyze, visualize and predict
