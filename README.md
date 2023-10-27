@@ -1,29 +1,30 @@
-# CDP Public Cloud - Open Data Lakehouse Trial - Instructions
+# Cloudera Data Platform (CDP) Public Cloud Trial
 
-## Multiple Use Cases can be tested using this Trial
+## Welcome to the **All in One Data Lakehouse** tutorial! 
 
-1. Use CDP Public Cloud service to ingest data, analyze, visualize and predict
-2. [Test cool features of **Iceberg**](iceberg.md)
-3. [Check out **LLM Chatbot** Augmented with Enterprise Data](llm_chatbot.md)
+In this tutorial, we'll guide you through constructing an Open Data Lakehouse, starting with raw source data. You'll gain practical insights into how to efficiently ingest data, transform raw information, create tailored datasets for dashboarding and reporting, and develop a predictive model using historical records.
 
-### Use CDP Public Cloud service to ingest data, analyze, visualize and predict
+These labs will showcase CDP's user-friendly features and robust capabilities, allowing organizations to effectively manage, analyze, and extract valuable insights from their data, regardless of its structure or source. Let's embark on this journey into the realm of data-driven success together.
 
-This use-case aims at providing a high-level overview of how to use the CDP Public Cloud service to quickly ingest data, explore raw data, create curated versions of the data for simple reporting and dashboarding, and then run a machine learning prediction use-case. It highlights the ease of use and automation capabilities that help ensure business objectives are met.
+For our tutorial, we will use a raw airlines dataset to -
 
-A real-life business narrative enables you to follow and understand how one can build a pipeline based on the data lakehouse framework on CDP. This is a sample use-case and real life use-cases follow a similar pattern.
+0. [Pre-reqs](00_prereqs.md) - Set up CDP user workload password and deploy the Applied Machine Learning Prototype (AMP) for `Canceled Flight Prediction`
+1. [Ingest](/01_ingest.md) - Build an ingestion data pipeline to enable advanced analytics and Machine Learning (ML) use cases
+2. [Analyze](/02_analyze.md) - Explore the ingested data and conduct an interactive analysis
+3. [Visualize](/03_visualize.md) - Create a visualization dashboard and deploy an ML project
+4. [Predict](/04_predict.md) - Predict the likelihood of a flight being canceled based on historical records
+5. [Do More with Iceberg](/05_iceberg.md) - Test Iceberg features such as Time Travel and Partition Evolution, and change the ML Project to train the `Canceled Flight Prediction` model using the Data Lakehouse (Iceberg) data
 
-For the use-case today, we will use the airlines dataset.
+### Further Exploration
 
-### Use\-case reference architecture:
+Learn how to use an open-source pre-trained instruction-following LLM (Large Language Model) to build a ChatBot-like web application. The responses of the LLM are enhanced by giving it context from an internal knowledge base. This context is retrieved by using an open-source Vector Database to do a semantic search.
+
+- [LLM Chatbot Augmentation with Enterprise Data](llm_chatbot.md)
+
+### Use Case Reference Architecture:
 
 ![CDP_One-Self_service_trial-use-case_development.png](images/CDP_One-Self_service_trial-use-case_development.png)
 
 **Data Model:**
-![sRDseVc087jXJZoaZqGhauBsX6cuUWueG8zitK8yDo-i0-ycdiR23d7ErVhPz75GqeJY6BEU_k6o59pVq8YGSB-8chMrjHKnsF2HXoU7RIHlcMqcQKvX-yKOkAJqeNVt7_OwKTSNtllAIDeIid5z4m4T8WEM3bDGmRDazGpzq_E4QL1HsxVTvEqhA.png](images/sRDseVc087jXJZoaZqGhauBsX6cuUWueG8zitK8yDo-i0-ycdiR23d7ErVhPz75GqeJY6BEU_k6o59pVq8YGSB-8chMrjHKnsF2HXoU7RIHlcMqcQKvX-yKOkAJqeNVt7_OwKTSNtllAIDeIid5z4m4T8WEM3bDGmRDazGpzq_E4QL1HsxVTvEqhA.png)
 
-With the above use\-case, we will go through each phase of building a data lakehouse which includes the below:
-
-- [Ingest](01_ingest.md)
-- [Analyze](02_analyze.md)
-- [Visualize](03_visualize.md)
-- [Predict](04_predict.md)
+![airline_logistics_ERD.png](images/airline_logistics_ERD.png)
