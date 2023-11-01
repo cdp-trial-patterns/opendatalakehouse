@@ -220,7 +220,7 @@ A `Dataset`, aka Data Model, is a logical representation of the data you want to
    * Change `Display Name` to Origin City
    * Click the `APPLY` button
 
-21. Under `Dimensions > airports_1`, click the pencil next to `city`
+21. Under `Dimensions > airports_1`, click the pencil next to `airports_1 city`
    * Change `Display Name` to Destination City
    * Click the `APPLY` button
 
@@ -287,21 +287,28 @@ We will now create 3 reports & charts in this dashboard, as follows
 
 ### Total Arrival Delays by Carrier
 
-1. Enter the tile for the dashboard as `Airlines dashboard`
+1. Enter the tile for the dashboard as `<prefix> Airlines Dashboard`
+   * Replace &lt;prefix> with your choosen prefix
+    ![.png](images/.png)
 
-2. Click `Visuals`, then `New Visual`
+2. When the Dashboard was created it automatically created a default visual.  This visual is a table showing data in the Dataset.
+   * Hoover over the Table visual
+   * Click no the `gear` (Configure) option 
 
-    ![Screen_Shot_2022-09-01_at_1-38-23_PM.png](images/Screen_Shot_2022-09-01_at_1-38-23_PM.png)
-
-3. Click `Grouped Bars` as the chart type
+3. On the right side of the screen under `VISUALS`, Click `Grouped Bars` as the chart type
 
     - 2nd row, 1st column
 
-4. From the `Dimensions` shelf, drag the `Carrier` field into the `X Axis` field
+4. From the `Dimensions` shelf, drag the `Carrier` field into the `X Axis` shelf
 
-5. From the `Measures` shelf, drag the `arrdelay` field into the `Y Axis` field
+5. From the `Measures` shelf, drag the `arrdelay` field into the `Y Axis` shelf
 
-6. Enter the title for this chart as `Total arrival delays by Carrier`
+   - This will add `sum(arrdelay)` to the `Y Axis` field
+    ![.png](images/.png)
+
+6. Click `REFRESH VISUAL`
+
+7. Enter the title for this chart as `Total arrival delays by Carrier` and hit `Enter`
 
     ![Screen_Shot_2022-09-01_at_1-40-16_PM.png](images/Screen_Shot_2022-09-01_at_1-40-16_PM.png)
 
@@ -310,32 +317,36 @@ We will now create 3 reports & charts in this dashboard, as follows
 We will create a scatter chart to identify the cities that have the most number of delayed flights
 
 1. Click `Visuals`, then `New Visual`
+![CDV New Visual](images/CDV_new_visual.png)
 
-2. Click `Scatter` as the chart type
+2. Click `Scatter` as the chart type, on the right side of the screen under `VISUALS`
 
     - 3rd row, 3rd column
 
-3. Enter the name of the chart as `Cities with the most number of delayed flights (Top 10)`
+3. Enter the name of the chart as `Cities with the most number of delayed flights (Top 10)` and hit `Enter`
 
-4. From the `Dimensions` shelf, drag the `Destination City` field into the `X Axis` field
+4. From the `Dimensions` shelf, drag the `Destination City` field into the `X Axis` shelf
 
-5. From the `Measures` shelf, drag the `Record Count` field into the `Y Axis` field
+5. From the `Measures` shelf, drag the `Record Count` field into the `Y Axis` shelf
 
-6. Click on the `Record Count` field you just dragged in
+6. Click on the arrow to the right of the `Record Count` field you just dragged into `Y Axis` shelf
 
     - We now want only to show the top 10 records.
 
         a. Under the `FIELD PROPERTIES` section of the popup, click the `Order and Top K` field
 
-        b. Next to `Top K`, enter `10` as the value and click `Refresh Visual`
+        b. Next to `Top K`, enter `10` as the value and click `Enter`
 
-    ![Screen_Shot_2022-09-01_at_1-48-28_PM.png](images/Screen_Shot_2022-09-01_at_1-48-28_PM.png)
+6. Click `REFRESH VISUAL`
+![Screen_Shot_2022-09-01_at_1-48-28_PM.png](images/Screen_Shot_2022-09-01_at_1-48-28_PM.png)
 
 ### Correlate Delays with Origin and Destination City Pairs
 
 For this use case, we will let CDV recommend a chart type for us.
 
 1. Click `Visuals`, then `New Visual`
+![CDV New Visual](images/CDV_new_visual.png)
+
 2. Now click on `Explore Visuals`
 
     ![Screen_Shot_2022-09-01_at_1-51-18_PM.png](images/Screen_Shot_2022-09-01_at_1-51-18_PM.png)
@@ -346,19 +357,35 @@ For this use case, we will let CDV recommend a chart type for us.
     
     - Choose `Record Count` under the `Measures` shelf
 
+    ![CDV Possible Visuals](images/CDV_possible_visuals.png)
+
 4. The `Possible Visuals` pane will show you a list of recommended visuals.
 
 5. You can explore the various charts and then choose `Correlation Heatmap`
 
-6. Give your new visual a title of `Correlate delays with origin & destination city pairs`
+   ![CDV Correlation Heatmap](images/CDV_correlation_heatmap.png)
 
-    ![Screen_Shot_2022-09-01_at_1-56-01_PM.png](images/Screen_Shot_2022-09-01_at_1-56-01_PM.png)
+6. Give your new visual a title of `Correlate delays with origin & destination city pairs` and hit `Enter`
 
-7. You can change the color of the correlation map by clicking on the `Explore Options` icon at the top of the chart. Select `Colors`, then choose a different color scheme.
+   ![.png](images/.png)
 
-    ![Screen_Shot_2022-09-01_at_2-14-09_PM.png](images/Screen_Shot_2022-09-01_at_2-14-09_PM.png)
 
-8. Finally, click the `SAVE` button at the top to save the dashboard.
+
+
+
+
+7. You can change the color of the correlation map by clicking on the `Explore Options` icon at the top of the chart. Select `Styles/Fonts`, then choose a different style for this visual.
+
+    ![Visual Explorer - Styles/Fonts](images/CDV_visual_explorer_styles_fonts.png)
+
+8. The completed Dashboard should look like the following
+   ![CDV Completed Dashboard](images/CDV_completed_dashboard.png)
+
+9. Finally, click the `SAVE` button at the top to save the dashboard.
+
+10. At the top of the screen `VISAULS`, here you will see the saved Dashboard.  This is where you can go to view or continue editing the Dashboard 
+
+   ![.png](images/.png)
 
 As a next step, you can try creating a visual application based on the dashboard we just built and showcase what a business user dashboard could look like. The documentation is [here](https://docs.cloudera.com/data-visualization/7/howto-apps/topics/viz-create-app.html)
 
