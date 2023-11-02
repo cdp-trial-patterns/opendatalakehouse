@@ -275,11 +275,11 @@ In this lab, we will create a sample dashboard to visualize the reports for a bu
 
     ![Datasets header link](images/CDV_Datasets_header_link.png)
 
-2. Click on the `dataset` we created in Lab 1 and then click the `New Dashboard` icon.
+2. Click on the `Dataset` we created in Lab 1 and then click the `New Dashboard` icon.
 
     ![Screen_Shot_2022-09-01_at_1-28-26_PM.png](images/Screen_Shot_2022-09-01_at_1-28-26_PM.png)
 
-We will now create 3 reports & charts in this dashboard, as follows
+We will now create 3 visuals in this dashboard, as follows
 
 - Total arrival delays by Carrier
 - Cities with the most number of delayed flights \(Top 10\)
@@ -287,30 +287,33 @@ We will now create 3 reports & charts in this dashboard, as follows
 
 ### Total Arrival Delays by Carrier
 
-1. Enter the tile for the dashboard as `<prefix> Airlines Dashboard`
+1. Enter the title for the dashboard as `<prefix> Airlines Dashboard`
    * Replace &lt;prefix> with your choosen prefix
-    ![.png](images/.png)
+    ![CDV Name Dashboard](images/CDV_name_dashboard.png)
 
 2. When the Dashboard was created it automatically created a default visual.  This visual is a table showing data in the Dataset.
    * Hoover over the Table visual
-   * Click no the `gear` (Configure) option 
+   * Click no the `Configure` (gear) option 
+    ![CDV Configure Visual](images/CDV_configure_visual.png)
 
 3. On the right side of the screen under `VISUALS`, Click `Grouped Bars` as the chart type
 
     - 2nd row, 1st column
+    ![CDV Grouped Bars](images/CDV_grouped_bars.png)
 
 4. From the `Dimensions` shelf, drag the `Carrier` field into the `X Axis` shelf
+    ![CDV Carrier to X Axis](images/CDV_carrier_to_xaxis.png)
 
 5. From the `Measures` shelf, drag the `arrdelay` field into the `Y Axis` shelf
 
-   - This will add `sum(arrdelay)` to the `Y Axis` field
-    ![.png](images/.png)
+   - This will add `sum(arrdelay)` to the `Y Axis` shelf
+    ![CDV ArrDelay to Y Axis](images/CDV_arrdelay_to_yaxis.png)
 
 6. Click `REFRESH VISUAL`
 
 7. Enter the title for this chart as `Total arrival delays by Carrier` and hit `Enter`
 
-    ![Screen_Shot_2022-09-01_at_1-40-16_PM.png](images/Screen_Shot_2022-09-01_at_1-40-16_PM.png)
+![Screen_Shot_2022-09-01_at_1-40-16_PM.png](images/Screen_Shot_2022-09-01_at_1-40-16_PM.png)
 
 ### Cities with the Most Number of Delayed Flights \(Top 10\)
 
@@ -338,7 +341,7 @@ We will create a scatter chart to identify the cities that have the most number 
         b. Next to `Top K`, enter `10` as the value and click `Enter`
 
 6. Click `REFRESH VISUAL`
-![Screen_Shot_2022-09-01_at_1-48-28_PM.png](images/Screen_Shot_2022-09-01_at_1-48-28_PM.png)
+![CDV Cities with most delayed flights](images/CDV_cities_most_delayed_flights.png)
 
 ### Correlate Delays with Origin and Destination City Pairs
 
@@ -365,18 +368,16 @@ For this use case, we will let CDV recommend a chart type for us.
 
    ![CDV Correlation Heatmap](images/CDV_correlation_heatmap.png)
 
-6. Give your new visual a title of `Correlate delays with origin & destination city pairs` and hit `Enter`
+6. Give your new visual a title of `Correlate Delays with Origin & Destination City Pairs` and hit `Enter`
 
    ![.png](images/.png)
 
-
-
-
-
-
-7. You can change the color of the correlation map by clicking on the `Explore Options` icon at the top of the chart. Select `Styles/Fonts`, then choose a different style for this visual.
+7. You can change the color of the correlation map by clicking on the `Explore Options` icon at the top of the chart. Select `Styles/Fonts`
 
     ![Visual Explorer - Styles/Fonts](images/CDV_visual_explorer_styles_fonts.png)
+
+   * Scroll through the list and choose a different style for this visual.
+   ![Available Styles/Fonts](images/CDV_available_styles.png)
 
 8. The completed Dashboard should look like the following
    ![CDV Completed Dashboard](images/CDV_completed_dashboard.png)
@@ -385,7 +386,7 @@ For this use case, we will let CDV recommend a chart type for us.
 
 10. At the top of the screen `VISAULS`, here you will see the saved Dashboard.  This is where you can go to view or continue editing the Dashboard 
 
-   ![.png](images/.png)
+   ![CDV Visuals All Dashboards](images/CDV_visuals_all_dashboards.png)
 
 As a next step, you can try creating a visual application based on the dashboard we just built and showcase what a business user dashboard could look like. The documentation is [here](https://docs.cloudera.com/data-visualization/7/howto-apps/topics/viz-create-app.html)
 
