@@ -192,7 +192,7 @@ In this phase:
 
    ```
    SELECT year, count(*) 
-   FROM ${user_id}_airlines.flights
+   FROM ${prefix}_airlines.flights
    FOR SYSTEM_TIME AS OF '${create_ts}'
    GROUP BY year
    ORDER BY year desc;
@@ -208,13 +208,13 @@ In this phase:
 
    ```
    SELECT year, count(*) 
-   FROM ${user_id}_airlines.flights
+   FROM ${prefix}_airlines.flights
    FOR SYSTEM_VERSION AS OF ${snapshot_id}
    GROUP BY year
    ORDER BY year desc;
    ```
 
-   - This will return all data through 2006.  For Snapshot
+   - This will return all data through 2006.
 
    ![Time Travel System Version](images/query.airlines.flights.png)
 
